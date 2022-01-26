@@ -1,0 +1,50 @@
+$ground :rgb(214, 214, 214);
+$grean:rgb(43, 180, 19);
+
+.body {
+    background-color: $ground;
+}
+
+@mixin form ($mtop,$mLeft) {  
+   margin-top:$mtop ;
+    margin-left:$mLeft ;
+        
+}
+
+@mixin marge{
+    margin-bottom: 3%;
+}
+
+
+@mixin frame  {
+    width: 50%;
+    
+   padding: 1%;
+   margin-top: 1%;
+   
+}
+
+
+@mixin but {
+    background-color:$grean;
+    color:white;
+    font-size: 1rem;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+.enter {
+    @include form( 5%,35% )
+}
+
+.frameing {
+    @include frame
+}
+
+.division {
+    @include marge
+}
+
+.bottom {
+    @include but
+}
